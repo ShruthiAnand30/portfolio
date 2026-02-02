@@ -25,11 +25,10 @@
       }
 
     h1 {
-       margin-bottom: 6px;
+        margin-bottom: 2px;   /* was effectively larger */
         font-size: 1.9rem;
         letter-spacing: -0.02em;
         color: #C41230;
-        
     }
 
     h2 {
@@ -73,33 +72,48 @@
         margin-bottom: 10px;
     }
     .contact-header {
-         display: flex;
-        justify-content: space-between;
+        display: flex;
         align-items: center;
-
+        gap: 10px;              
         font-size: 0.95rem;
         color: #464a53;
-        margin: 0; 
-    }   
+    }
+
+    .contact-header .divider {
+        color: rgba(196,18,48,0.5);  
+        font-weight: 300;
+    }
     .header-line {
         border: none;
-        height: 2.5px;
-        background-color: #e66883;
-        margin: 8px 0 14px 0;
+        height: 2px;
+        background-color: #C41230;
+       
     }
+    contact-header a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .contact-header a:hover {
+        text-decoration: underline;
+    }
+
    </style>
 </head>
 <body>
     <div class="resume-container">
 <!-- Intro section -->
    <h1>Shruthi Anandraman</h1>
-   <hr class="header-line">
+    <hr class="header-line">
 
-   <div class="contact-header">
-    <span>shruthi.anandraman@gmail.com</span>
-    <span>614-218-5766</span>
-    <span>https://www.linkedin.com/in/shruthi-anandraman/</span>
-    </div>
+   <span>shruthi.anandraman@gmail.com</span>
+    <span class="divider">|</span>
+    <span>+1 614-218-5766</span>
+    <span class="divider">|</span>
+    <span>
+        <a href="https://www.linkedin.com/in/shruthi-anandraman/">
+            linkedin.com/in/shruthi-anandraman
+        </a>
+    </span>
 
    <h2>Summary</h2>
    <p>Sophomore dual major in Cognitive Science and Information Technology and Web Science with experience in 
@@ -124,6 +138,13 @@
    
 <!-- Experience section -->
     <h2>Experience</h2>
+    <p><strong>RPI Professor Berry's Lab</strong>| Undergraduate Researcher | <span class = date>February 2026-Present</span></p>
+        <ul>
+            <li>
+                Onboarding into human–computer interaction research focused on attention, executive function, and learning; 
+                IRB/CITI certified and beginning training in experimental and user-centered research methods.
+            </li>
+        </ul>
     <p><strong>University of Connecticut Health</strong> | Research Summer Intern | <span class="date">June 2022- August 2023</span></p>      
         <ul>
             <li>
@@ -189,7 +210,7 @@
     <p><strong>RPI Neurons</strong> | Healthy Relationships PR Coordinator | <span class = "date">November 2025- Present</span></p>
         <ul>
             <li>
-                 Peer-led organization promoting harm reduction, wellness, and healthy relationships through 
+                 Promoting and marketing for the peer-led organization promoting harm reduction, wellness, and healthy relationships through 
                  campus outreach, events, and resource sharing.
             </li>
         </ul>
