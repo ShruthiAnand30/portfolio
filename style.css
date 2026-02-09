@@ -1,0 +1,203 @@
+:root{
+  /* Resume color palette */
+  --ink: #1A1A1A;
+  --muted: #2F3E46;
+
+  --navy: #0D0A6C;
+  --blue: #1812C4;
+  --blush: #E7D5D9;
+
+  --bg: #F7F5F8;
+  --line: #E5E7EB;
+}
+
+/* Reset */
+*{
+  box-sizing: border-box;
+}
+
+/* Page background */
+body{
+  margin: 0;
+  padding: 40px 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+/* Centered resume card */
+.page{
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.06);
+}
+
+/* Shared container */
+.container{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 22px 18px;
+}
+
+/* ===== HEADER ===== */
+header{
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.top-strip{
+  height: 10px;
+  background: var(--blush);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.header-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-name{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.site-subtext{
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-line{
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.contact-line a{
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-line a:hover{
+  text-decoration: underline;
+}
+
+/* ===== NAV BUTTONS ===== */
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-btn{
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.nav-btn:hover{
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.nav-btn.active{
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #ffffff;
+}
+
+/* ===== CONTENT ===== */
+.section{
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.section:last-child{
+  border-bottom: none;
+}
+
+.section-title{
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* Resume-style entries */
+.entry{
+  padding: 12px 0;
+}
+
+.entry + .entry{
+  border-top: 1px dashed var(--line);
+}
+
+.entry-head{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.entry-sub{
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Buttons */
+.button{
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 900;
+  border: 1px solid var(--blue);
+}
+
+.button:hover{
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.button.secondary{
+  background: #ffffff;
+  color: var(--blue);
+}
+
+.button.secondary:hover{
+  background: var(--blush);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  padding: 16px 0;
+  font-size: 14px;
+  color: var(--muted);
+}

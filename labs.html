@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Labs | Shruthi Anandraman</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Tiny modal styling (kept minimal; if you want STRICT no inline styles anywhere,
+       I can move these into css/style.css too. For now this is still in the HTML head,
+       not inline on elements.) -->
+  <style>
+    /* Modal backdrop + box (minimal) */
+    .modal-backdrop{
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      z-index: 999;
+    }
+
+    .modal{
+      width: 100%;
+      max-width: 520px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.16);
+      padding: 18px;
+    }
+
+    .modal h3{
+      margin: 0 0 6px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .modal p{
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .modal-actions{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .modal-close{
+      margin-left: auto;
+    }
+
+    .lab-link{
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <div class="top-strip"></div>
+      <div class="container">
+        <div class="header-row">
+
+         <div>
+            <h1 class="site-name">Shruthi Anandraman</h1>
+            <p class="site-subtext">
+              Majors: Cognitive Science + ITWS • Minor: Psychological Science
+            </p>
+            <p class="contact-line">
+              <a href="mailto:shruthi.anandraman@gmail.com">shruthi.anandraman@gmail.com</a> •
+              <a href="mailto:anands3@rpi.edu">anands3@rpi.edu</a> •
+              <a href="https://linkedin.com/in/shruthi-anandraman" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+
+          <nav aria-label="Main navigation">
+            <a class="nav-btn" href="index.html">Home</a>
+            <a class="nav-btn" href="about.html">About Me</a>
+            <a class="nav-btn active" href="labs.html">Labs</a>
+            <a class="nav-btn" href="reference.html">References</a>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2 class="section-title">Lab List</h2>
+
+        <!-- LAB 1 -->
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 1</span>
+            <span>Setup / Intro</span>
+          </div>
+          <div class="entry-sub">
+            Overall set up and connecting of Github, Azure and System. Click the reference for the 
+            4 pdf of the instructions of installation and connecting of the systems. Check the results
+            for the pdf for the proof of connecting the systems. 
+          </div>
+          <a class="button open-lab"
+             href="#"
+             data-lab="Lab 1"
+             data-results="Labs/Lab1/lab1-result.pdf"
+             data-refs="Labs/Lab1/lab1-referance">
+            Open Lab 1 Options
+          </a>
+        </div>
+
+        <!-- LAB 2 -->
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 2</span>
+            <span>Resume</span>
+          </div>
+          <div class="entry-sub">
+            Creating a Resume using HTML and CSS.
+            Click the results to see my resume and the reference to see a resume template provided.
+          </div>
+          <a class="button open-lab"
+             href="#"
+             data-lab="Lab 2"
+             data-results="Labs/Lab2/anands3-ShruthiAnandraman-resume.html"
+             data-refs="Labs/Lab2/Lab02-SampleResumeGrid2025.html">
+            Open Lab 2 Options
+          </a>
+        </div>
+
+        <!-- LAB 3 -->
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 3</span>
+            <span>Personal Website</span>
+          </div>
+          <div class="entry-sub">
+            Creating a Information Architecture diagram for this website. Click the Results to see the diagram, 
+            the referance for the instructions and the back icon to explore the website.
+          </div>
+          <a class="button open-lab"
+             href="#"
+             data-lab="Lab 3"
+             data-results="Labs\Lab3\itws1100Lab3-IA-anands3.png"
+             data-refs="Labs/Lab3/ITWS1100-lab03-WebsiteInstructions-2025v2.html">
+            Open Lab 3 Options
+          </a>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+      <a href="index.html">Back to Home</a>
+    </div>
+  </footer>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Lab Options</h3>
+      <p id="modalDesc">Choose where you want to go.</p>
+
+      <div class="modal-actions">
+        <a class="button" id="modalResults" href="#">View Project / Results</a>
+        <a class="button secondary" id="modalRefs" href="#">View References</a>
+
+        <a class="button secondary modal-close" href="#" id="modalClose">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const backdrop = document.getElementById("modalBackdrop");
+    const title = document.getElementById("modalTitle");
+    const desc = document.getElementById("modalDesc");
+    const btnResults = document.getElementById("modalResults");
+    const btnRefs = document.getElementById("modalRefs");
+    const btnClose = document.getElementById("modalClose");
+
+    function openModal(labName, resultsHref, refsHref){
+      title.textContent = labName + " Options";
+      desc.textContent = "Pick a link:";
+      btnResults.href = resultsHref;
+      btnRefs.href = refsHref;
+
+      backdrop.style.display = "flex";
+      backdrop.setAttribute("aria-hidden", "false");
+    }
+
+    function closeModal(){
+      backdrop.style.display = "none";
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    document.querySelectorAll(".open-lab").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const labName = link.getAttribute("data-lab");
+        const resultsHref = link.getAttribute("data-results");
+        const refsHref = link.getAttribute("data-refs");
+        openModal(labName, resultsHref, refsHref);
+      });
+    });
+
+    // Close modal when clicking backdrop
+    backdrop.addEventListener("click", (e) => {
+      if(e.target === backdrop) closeModal();
+    });
+
+    // Close modal button
+    btnClose.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeModal();
+    });
+
+    // Close on ESC
+    document.addEventListener("keydown", (e) => {
+      if(e.key === "Escape") closeModal();
+    });
+  </script>
+  
+
+</body>
+</html>
