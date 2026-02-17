@@ -5,63 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Labs | Shruthi Anandraman</title>
   <link rel="stylesheet" href="style.css"/>
-
-  <!-- Tiny modal styling (kept minimal; if you want STRICT no inline styles anywhere,
-       I can move these into css/style.css too. For now this is still in the HTML head,
-       not inline on elements.) -->
-  <style>
-    /* Modal backdrop + box (minimal) */
-    .modal-backdrop{
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.35);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-      z-index: 999;
-    }
-
-    .modal{
-      width: 100%;
-      max-width: 520px;
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      box-shadow: 0 18px 45px rgba(0,0,0,0.16);
-      padding: 18px;
-    }
-
-    .modal h3{
-      margin: 0 0 6px;
-      color: var(--navy);
-      font-size: 18px;
-    }
-
-    .modal p{
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .modal-actions{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .modal-close{
-      margin-left: auto;
-    }
-
-    .lab-link{
-      display: block;
-      text-decoration: none;
-      color: inherit;
-      padding: 6px 0;
-    }
-  </style>
 </head>
 
 <body>
@@ -96,19 +39,37 @@
     </header>
 
     <main class="container">
+      
+      <div class="intro-section">
+        <h2>Lab Portfolio</h2>
+        <p>
+          A comprehensive collection of my ITWS1100 lab assignments, showcasing progressive 
+          skill development in web technologies, information architecture, and design thinking. 
+          Each lab represents a step in my journey from foundational concepts to complex 
+          web development projects.
+        </p>
+        
+        <div style="margin-top: 20px;">
+          <span class="stat-card navy">3 Completed Labs</span>
+          <span class="stat-card gold">Full-Stack Skills</span>
+          <span class="stat-card ruby">Azure Deployed</span>
+        </div>
+      </div>
+
       <section class="section">
-        <h2 class="section-title">Lab List</h2>
+        <h2 class="section-title">Lab Projects</h2>
 
         <!-- LAB 1 -->
         <div class="entry">
           <div class="entry-head">
-            <span>Lab 1</span>
-            <span>Setup / Intro</span>
+            <span>Lab 1 – Development Environment Setup</span>
+            <span>System Configuration</span>
           </div>
           <div class="entry-sub">
-            Overall set up and connecting of Github, Azure and System. Click the reference for the 
-            4 pdf of the instructions of installation and connecting of the systems. Check the results
-            for the pdf for the proof of connecting the systems. 
+            Overall setup and integration of GitHub, Azure, and local development systems. This 
+            foundational lab established the workflow for all subsequent projects, including version 
+            control, cloud deployment, and development best practices. Documentation includes proof 
+            of successful system connections and configuration.
           </div>
           <a class="button open-lab"
              href="#"
@@ -122,13 +83,24 @@
         <!-- LAB 2 -->
         <div class="entry">
           <div class="entry-head">
-            <span>Lab 2</span>
-            <span>Resume</span>
+            <span>Lab 2 – Professional Resume</span>
+            <span>HTML / CSS / Grid Layout</span>
           </div>
           <div class="entry-sub">
-            Creating a Resume using HTML and CSS.
-            Click the results to see my resume and the reference to see a resume template provided.
+            Creating a professional, web-based resume using semantic HTML and CSS Grid. This lab 
+            emphasized clean design, typography, and creating a document that's both visually 
+            appealing and ATS-compatible for job applications. The project demonstrates mastery 
+            of layout techniques and design principles.
           </div>
+          
+          <!-- Optional: Add preview if you have screenshot -->
+          <!-- Uncomment when you have a screenshot
+          <div class="project-preview">
+            <img src="../Labs/Lab2/resume-preview.png" alt="Resume Preview" />
+            <div class="preview-label">Professional Resume Design</div>
+          </div>
+          -->
+          
           <a class="button open-lab"
              href="#"
              data-lab="Lab 2"
@@ -141,13 +113,21 @@
         <!-- LAB 3 -->
         <div class="entry">
           <div class="entry-head">
-            <span>Lab 3</span>
-            <span>Personal Website</span>
+            <span>Lab 3 – Personal Website Design</span>
+            <span>Information Architecture / UX Planning</span>
           </div>
           <div class="entry-sub">
-            Creating a Information Architecture diagram for this website. Click the Results to see the diagram, 
-            the referance for the instructions and the back icon to explore the website.
+            Creating a comprehensive information architecture diagram for this personal website. 
+            This lab focused on user experience planning, content organization, and establishing 
+            clear navigation hierarchies. The IA diagram serves as the blueprint for the entire 
+            site structure, demonstrating strategic thinking before implementation.
           </div>
+          
+          <div class="project-preview">
+            <img src="../Labs/Lab3/itws1100Lab3-IA-anands3.png" alt="Information Architecture Diagram" />
+            <div class="preview-label">Website IA Diagram</div>
+          </div>
+          
           <a class="button open-lab"
              href="#"
              data-lab="Lab 3"
@@ -162,10 +142,10 @@
     </main>
 
     <footer>
-    <div class="container">
-      <a href="../index.html">Back to Home</a>
-    </div>
-  </footer>
+      <div class="container">
+        <a href="../index.html">Back to Home</a>
+      </div>
+    </footer>
 
   </div>
 
@@ -178,7 +158,6 @@
       <div class="modal-actions">
         <a class="button" id="modalResults" href="#">View Project / Results</a>
         <a class="button secondary" id="modalRefs" href="#">View References</a>
-
         <a class="button secondary modal-close" href="#" id="modalClose">Close</a>
       </div>
     </div>
@@ -194,7 +173,7 @@
 
     function openModal(labName, resultsHref, refsHref){
       title.textContent = labName + " Options";
-      desc.textContent = "Pick a link:";
+      desc.textContent = "Pick a link to explore this lab:";
       btnResults.href = resultsHref;
       btnRefs.href = refsHref;
 
