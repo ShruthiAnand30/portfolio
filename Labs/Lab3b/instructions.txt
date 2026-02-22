@@ -1,0 +1,14 @@
+Lab 3b
+
+Enhance your personal websites using both your web development knowledge AND AI collaboration.
+Requirements:
+ Create a branch (do not merge to main)
+Use AI to work on your current website. (use an AI of your choice)
+Create 5 iterations of your website using prompts of your choice. (commit after each iteration)
+Show iteration - document how you refined AI suggestions
+Focus on prompt vs output - the result derived from each prompt (this helps you understand how your input ultimately affects the result) 
+
+Deliverables:
+A lab 3b branch (not merged) (zip file)
+At least 5 commits (for each iteration)
+A 2-page reflection docx on what you learned about AI-assisted development – put this into your lab3 folder in this branch

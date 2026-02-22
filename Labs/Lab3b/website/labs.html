@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Labs | Shruthi Anandraman</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <div class="top-strip"></div>
+      <div class="container">
+        <div class="header-row">
+
+         <div>
+            <h1 class="site-name">Shruthi Anandraman</h1>
+            <p class="site-subtext">
+              Majors: Cognitive Science + ITWS • Minor: Psychological Science
+            </p>
+            <p class="contact-line">
+              <a href="mailto:shruthi.anandraman@gmail.com">shruthi.anandraman@gmail.com</a> •
+              <a href="mailto:anands3@rpi.edu">anands3@rpi.edu</a> •
+              <a href="https://linkedin.com/in/shruthi-anandraman" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+
+          <nav aria-label="Main navigation">
+            <a class="nav-btn" href="../index.html">Home</a>
+            <a class="nav-btn" href="about.html">About Me</a>
+            <a class="nav-btn active" href="labs.html">Labs</a>
+            <a class="nav-btn" href="reference.html">References</a>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      
+      <div class="intro-section">
+        <h2>Lab Portfolio</h2>
+        <p>
+          A comprehensive collection of my ITWS1100 lab assignments, showcasing progressive 
+          skill development in web technologies, information architecture, and design thinking. 
+          Each lab represents a step in my journey from foundational concepts to complex 
+          web development projects.
+        </p>
+        
+        <div style="margin-top: 20px;">
+          <span class="stat-card navy">3 Completed Labs</span>
+          <span class="stat-card gold">Full-Stack Skills</span>
+          <span class="stat-card ruby">Azure Deployed</span>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title">Lab Projects</h2>
+
+        <!-- LAB 1 -->
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 1 – Development Environment Setup</span>
+            <span>System Configuration</span>
+          </div>
+          <div class="entry-sub">
+            Overall setup and integration of GitHub, Azure, and local development systems. This 
+            foundational lab established the workflow for all subsequent projects, including version 
+            control, cloud deployment, and development best practices. Documentation includes proof 
+            of successful system connections and configuration.
+          </div>
+          <a class="button open-lab"
+             href="#"
+             data-lab="Lab 1"
+             data-results="../Labs/Lab1/lab1-result.pdf"
+             data-refs="../Labs/Lab1/lab1-referance">
+            Open Lab 1 Options
+          </a>
+        </div>
+
+        <!-- LAB 2 -->
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 2 – Professional Resume</span>
+            <span>HTML / CSS / Grid Layout</span>
+          </div>
+          <div class="entry-sub">
+            Creating a professional, web-based resume using semantic HTML and CSS Grid. This lab 
+            emphasized clean design, typography, and creating a document that's both visually 
+            appealing and ATS-compatible for job applications. The project demonstrates mastery 
+            of layout techniques and design principles.
+          </div>
+          
+          <!-- Optional: Add preview if you have screenshot -->
+          <!-- Uncomment when you have a screenshot
+          <div class="project-preview">
+            <img src="../Labs/Lab2/resume-preview.png" alt="Resume Preview" />
+            <div class="preview-label">Professional Resume Design</div>
+          </div>
+          -->
+          
+          <a class="button open-lab"
+             href="#"
+             data-lab="Lab 2"
+             data-results="../Labs/Lab2/anands3-ShruthiAnandraman-resume.html"
+             data-refs="../Labs/Lab2/Lab02-SampleResumeGrid2025.html">
+            Open Lab 2 Options
+          </a>
+        </div>
+
+        <!-- LAB 3 -->
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 3 – Personal Website Design</span>
+            <span>Information Architecture / UX Planning</span>
+          </div>
+          <div class="entry-sub">
+            Creating a comprehensive information architecture diagram for this personal website. 
+            This lab focused on user experience planning, content organization, and establishing 
+            clear navigation hierarchies. The IA diagram serves as the blueprint for the entire 
+            site structure, demonstrating strategic thinking before implementation.
+          </div>
+          
+          <div class="project-preview">
+            <img src="../Labs/Lab3/itws1100Lab3-IA-anands3.png" alt="Information Architecture Diagram" />
+            <div class="preview-label">Website IA Diagram</div>
+          </div>
+          
+          <a class="button open-lab"
+             href="#"
+             data-lab="Lab 3"
+             data-results="../Labs/Lab3/itws1100Lab3-IA-anands3.png"
+             data-refs="../Labs/Lab3/ITWS1100-lab03-WebsiteInstructions-2025v2.html">
+            Open Lab 3 Options
+          </a>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <a href="../index.html">Back to Home</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Lab Options</h3>
+      <p id="modalDesc">Choose where you want to go.</p>
+
+      <div class="modal-actions">
+        <a class="button" id="modalResults" href="#">View Project / Results</a>
+        <a class="button secondary" id="modalRefs" href="#">View References</a>
+        <a class="button secondary modal-close" href="#" id="modalClose">Close</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const backdrop = document.getElementById("modalBackdrop");
+    const title = document.getElementById("modalTitle");
+    const desc = document.getElementById("modalDesc");
+    const btnResults = document.getElementById("modalResults");
+    const btnRefs = document.getElementById("modalRefs");
+    const btnClose = document.getElementById("modalClose");
+
+    function openModal(labName, resultsHref, refsHref){
+      title.textContent = labName + " Options";
+      desc.textContent = "Pick a link to explore this lab:";
+      btnResults.href = resultsHref;
+      btnRefs.href = refsHref;
+
+      backdrop.style.display = "flex";
+      backdrop.setAttribute("aria-hidden", "false");
+    }
+
+    function closeModal(){
+      backdrop.style.display = "none";
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    document.querySelectorAll(".open-lab").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const labName = link.getAttribute("data-lab");
+        const resultsHref = link.getAttribute("data-results");
+        const refsHref = link.getAttribute("data-refs");
+        openModal(labName, resultsHref, refsHref);
+      });
+    });
+
+    // Close modal when clicking backdrop
+    backdrop.addEventListener("click", (e) => {
+      if(e.target === backdrop) closeModal();
+    });
+
+    // Close modal button
+    btnClose.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeModal();
+    });
+
+    // Close on ESC
+    document.addEventListener("keydown", (e) => {
+      if(e.key === "Escape") closeModal();
+    });
+  </script>
+  
+
+</body>
+</html>
