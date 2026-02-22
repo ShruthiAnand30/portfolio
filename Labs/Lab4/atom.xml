@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="rss.css"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shruthi's Lab Updates (Atom)</title>
+  <subtitle>Atom feed for Shruthi Anandraman's Intro to ITWS labs</subtitle>
+
+  <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/index.html" rel="alternate" />
+  <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/lab04/atom.xml" rel="self" type="application/atom+xml" />
+
+  <id>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab4/atom.xml</id>
+  <updated>2026-02-22T12:00:00-05:00</updated>
+
+  <author>
+    <name>Shruthi Anandraman</name>
+  </author>
+
+  <entry>
+    <title>Lab 01 - Personal Setup</title>
+    <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab1/lab1-result.pdf" />
+    <id>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab1/lab1-result.pdf</id>
+    <updated>2026-01-26T12:00:00-05:00</updated>
+    <summary>Creating and establishing all the softwares and resources needed for the labs and assignments of the Intro to ITWS Class.</summary>
+  </entry>
+
+  <entry>
+    <title>Lab 02 - Resume</title>
+    <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab2/anands3-ShruthiAnandraman-resume.html" />
+    <id>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab2/anands3-ShruthiAnandraman-resume.html</id>
+    <updated>2026-02-02T12:00:00-05:00</updated>
+    <summary>Developed a resume describing Shruthi's academic achievements, projects, skills and work experiences.</summary>
+  </entry>
+
+  <entry>
+    <title>Lab 03 - Personal Website and Information Architecture</title>
+    <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab3/itws1100Lab3-IA-anands3.png" />
+    <id>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab3/itws1100Lab3-IA-anands3.png</id>
+    <updated>2026-02-09T12:00:00-05:00</updated>
+    <summary>Develop a Personal Website to highlight all the semester/personal projects and design a Information Architecture for it's layout.</summary>
+  </entry>
+
+  <entry>
+    <title>Lab 03b - Personal Website Enhancements</title>
+    <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab3b/index.html" />
+    <id>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab3b/index.html</id>
+    <updated>2026-02-16T12:00:00-05:00</updated>
+    <summary>Enhance the project Lab03 using Artificial Intelligence.</summary>
+  </entry>
+
+  <entry>
+    <title>Lab 04 - RSS and Atom Feed Implementation</title>
+    <link href="http://anands3rpi.eastus.cloudapp.azure.com/iit/lab04/rss.xml" />
+    <id>http://anands3rpi.eastus.cloudapp.azure.com/iit/lab04/rss.xml</id>
+    <updated>2026-02-22T12:00:00-05:00</updated>
+    <summary>Built and validated an RSS feed in XML format to publish updates from my ITWS labs.</summary>
+  </entry>
+
+</feed>
