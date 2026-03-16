@@ -43,20 +43,19 @@ item {
   border-radius: 10px;
   background: #ffffff;
 }
+/* Links */
+item> link {
+  display: block;
+  color: var(--blue);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
 
 /* Item title */
 item > title {
   display: block;
   font-weight: 800;
   color: var(--blue);
-  margin-bottom: 4px;
-}
-
-/* Links */
-link {
-  display: block;
-  color: var(--blue);
-  font-size: 13px;
   margin-bottom: 4px;
 }
 
