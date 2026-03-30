@@ -1,0 +1,20 @@
+body {
+  width: 1000px;
+}
+
+#bodyBlock {
+  width: 700px;
+  margin: auto;
+}
+
+/* Center both headings */
+h1, h4 {
+  text-align: center;
+}
+
+/* Purple, italic, small-caps style for last name on hover */
+.makeItPurple {
+  color: purple;
+  font-style: italic;
+  font-variant: small-caps;
+}
