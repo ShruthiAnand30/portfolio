@@ -13,7 +13,7 @@ include('includes/functions.inc.php');
 <?php
 $dbOk = false;
 
-@$db = new mysqli('localhost', 'root', 'root', 'iit');
+@$db = new mysqli('localhost', 'root', 'Shruthi@30', 'iit');
 
 if ($db->connect_error) {
    echo '<div class="messages">Could not connect to the database. Error: ';
