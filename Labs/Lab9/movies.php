@@ -5,6 +5,12 @@ include('includes/functions.inc.php');
 <title>PHP &amp; MySQL - ITWS</title>
 
 <?php include('includes/head.inc.php'); ?>
+<style>
+   #movieTable th, #movieTable td {
+      text-align: left;
+   }
+</style>
+
 
 <h1>PHP &amp; MySQL</h1>
 
