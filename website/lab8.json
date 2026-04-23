@@ -55,6 +55,20 @@
       "description": "Built a dynamic lab list page using jQuery and AJAX. Lab entries are stored in a JSON file and loaded dynamically on page load",
       "results": "labs.html",
       "refs": "../Labs/Lab8/lab8instructions.html"
+    },
+{
+      "lab": "Lab 9",
+      "subtitle": "SQL & PHP Database",
+      "description": "Connected a MySQL database to PHP to build a dynamic movie database app. Created tables, inserted actors from a CSV, wrote relational queries, and displayed movies and actor relationships across multiple PHP-rendered tabs.",
+      "results": "../Labs/Lab9/movies.php",
+      "refs": "../Labs/Lab9/Lab9Instructions.html"
+    },
+    {
+      "lab": "Lab 10",
+      "subtitle": "Production Deployment, SSL & Auto-Deploy",
+      "description": "Deployed the website to a live Azure VM, secured sensitive labs with .htaccess password protection, enabled HTTPS via a free Let's Encrypt certificate, and set up automatic deployment from GitHub using a webhook handler with HMAC signature verification.",
+      "results": "../../index.php",
+      "refs": "../Labs/Lab10/index.html"
     }
   ]
 }
