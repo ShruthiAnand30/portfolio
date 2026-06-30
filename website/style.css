@@ -1,76 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;700;900&display=swap');
+
 :root{
-  /* Resume color palette */
-  --ink: #1A1A1A;
-  --muted: #2F3E46;
+  --ink:   #1A1A1A;
+  --muted: #3A4A5A;
 
-  --navy: #0D0A6C;
-  --blue: #1812C4;
-  --blush: #E7D5D9;
+  --navy:    #082050;
+  --emerald: #0D6B50;
+  --gold:    #C9A961;
 
-  --bg: #F7F5F8;
-  --line: #E5E7EB;
+  --cream: #F5F8FF;
+  --sand:  #E8EDF8;
+  --line:  #C8D0E4;
 }
 
-/* Reset */
-*{
-  box-sizing: border-box;
-}
+*{ box-sizing:border-box; margin:0; padding:0; }
 
-/* Page background */
+/* ── BACKGROUND: deep navy + large floral kolam (bottom-left pattern) ─── */
+/*
+  SVG tile: 200×200 px
+  Reproduces the larger bottom-row kolam: a central diamond with
+  four rounded petal lobes, outer S-curve flourishes at each diagonal,
+  and a 4×4 nail grid.
+*/
 body{
-  margin: 0;
-  padding: 40px 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.55;
-}
+  margin:0; padding:40px 0; min-height:100vh;
+  background-color: #071840;
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(13,107,80,.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(201,169,97,.08) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'%3E%3C!-- outer petal lobes at cardinals --%3E%3Cpath d='M100 10 C80 30,70 50, 100 70 C130 50,120 30, 100 10Z'/%3E%3Cpath d='M100 190 C80 170,70 150, 100 130 C130 150,120 170, 100 190Z'/%3E%3Cpath d='M10 100 C30 80,50 70, 70 100 C50 130,30 120, 10 100Z'/%3E%3Cpath d='M190 100 C170 80,150 70, 130 100 C150 130,170 120, 190 100Z'/%3E%3C!-- diagonal S-curve flourishes --%3E%3Cpath d='M30 30 C20 44,34 56, 48 48 C62 40,54 26, 40 20 C28 14,18 26, 30 30Z'/%3E%3Cpath d='M170 30 C180 44,166 56, 152 48 C138 40,146 26, 160 20 C172 14,182 26, 170 30Z'/%3E%3Cpath d='M30 170 C20 156,34 144, 48 152 C62 160,54 174, 40 180 C28 186,18 174, 30 170Z'/%3E%3Cpath d='M170 170 C180 156,166 144, 152 152 C138 160,146 174, 160 180 C172 186,182 174, 170 170Z'/%3E%3C!-- inner diamond ring --%3E%3Cpath d='M100 55 C78 68,62 82, 62 100 C62 118,78 132, 100 145 C122 132,138 118, 138 100 C138 82,122 68, 100 55Z'/%3E%3C!-- inner cross petals --%3E%3Cpath d='M100 55 C110 70,110 84, 100 100 C90 84,90 70, 100 55Z'/%3E%3Cpath d='M100 145 C110 130,110 116, 100 100 C90 116,90 130, 100 145Z'/%3E%3Cpath d='M62 100 C76 90,90 90, 100 100 C90 110,76 110, 62 100Z'/%3E%3Cpath d='M138 100 C124 90,110 90, 100 100 C110 110,124 110, 138 100Z'/%3E%3C!-- tiny mid-edge leaves --%3E%3Cpath d='M100 30 C106 22,114 22, 100 14 C86 22,94 22, 100 30Z'/%3E%3Cpath d='M100 170 C106 178,114 178, 100 186 C86 178,94 178, 100 170Z'/%3E%3Cpath d='M30 100 C22 94,22 106, 14 100 C22 86,22 94, 30 100Z'/%3E%3Cpath d='M170 100 C178 94,178 106, 186 100 C178 86,178 94, 170 100Z'/%3E%3C/g%3E%3C!-- nail dots --%3E%3Cg fill='rgba(255,255,255,0.2)'%3E%3Ccircle cx='50'  cy='50'  r='2.5'/%3E%3Ccircle cx='100' cy='50'  r='2.5'/%3E%3Ccircle cx='150' cy='50'  r='2.5'/%3E%3Ccircle cx='50'  cy='100' r='2.5'/%3E%3Ccircle cx='100' cy='100' r='3.2'/%3E%3Ccircle cx='150' cy='100' r='2.5'/%3E%3Ccircle cx='50'  cy='150' r='2.5'/%3E%3Ccircle cx='100' cy='150' r='2.5'/%3E%3Ccircle cx='150' cy='150' r='2.5'/%3E%3Ccircle cx='100' cy='18'  r='1.8'/%3E%3Ccircle cx='100' cy='182' r='1.8'/%3E%3Ccircle cx='18'  cy='100' r='1.8'/%3E%3Ccircle cx='182' cy='100' r='1.8'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto, auto, 200px 200px;
+  background-repeat: no-repeat, no-repeat, repeat;
 
-/* Centered resume card */
-.page{
-  max-width: 980px;
-  margin: 0 auto;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: 0 14px 32px rgba(0,0,0,0.06);
-}
-
-/* Shared container */
-.container{
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 22px 18px;
-}
-
-/* ===== HEADER ===== */
-header{
-  background: #ffffff;
-  border-bottom: 1px solid var(--line);
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-}
-
-.top-strip{
-  height: 10px;
-  background: var(--blush);
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-}
-
-.header-row{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.site-name{
-  margin: 0;
-  font-size: 30px;
-  font-weight: 800;
-  color: var(--navy);
+  font-family:'Lato',sans-serif;
+  color:var(--ink);
+  line-height:1.65;
 }
 
 .site-subtext{
