@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="rss.css"?>
+
+<rss version="2.0">
+    <channel>
+        <title>Shruthi's RSS Feed</title>
+        <description>This is an RSS feed for Shruthi Anandraman's Labs for her Intro to ITWS Class</description>
+        <link>http://anands3rpi.eastus.cloudapp.azure.com/iit/index.html</link>
+        
+        <item>
+            <title>Lab 01 - Personal Setup</title>
+            <link>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab1/lab1-result.pdf</link>
+            <description>Creating and establishing all the softwares and resources needed for the labs and assignments of the Intro to ITWS Class.</description>
+            <pubDate>Mon, 26 Jan 2026 12:00:00 EST</pubDate>
+        </item>
+
+        <item>
+            <title>Lab 02 - Resume</title>
+            <link>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab2/anands3-ShruthiAnandraman-resume.html</link>
+            <description>Developed a resume describing Shruhti's academic acheivements, projects, skills and work experiences.</description>
+            <pubDate>Mon, 2 Feb 2026 12:00:00 EST</pubDate>
+        </item>
+
+        <item>
+            <title>Lab 03 - Personal Website and Information Architecture</title>
+            <link>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab3/itws1100Lab3-IA-anands3.png</link>
+            <description>Develop a Personal Website to highlight all the semester/personal projects and design a Information Architecture for it's layout.</description>
+            <pubDate>Mon, 9 Feb 2026 12:00:00 EST</pubDate>
+        </item>
+        <item>
+            <title>Lab 03b - Personal Website Enhancements</title>
+            <link>http://anands3rpi.eastus.cloudapp.azure.com/iit/Labs/Lab3b/index.html</link>
+            <description>Enhance the project Lab03 using Artifical Intelligence.</description>
+            <pubDate>Mon, 16 Feb 2026 12:00:00 EST</pubDate>
+        </item>
+
+        <item>
+            <title>Lab 04 - RSS and Atom Feed Implementation</title>
+            <link>http://anands3rpi.eastus.cloudapp.azure.com/iit/lab04/rss.xml</link>
+            <description>Built and validated an RSS feed in XML format to publish updates from my ITWS labs.</description>
+            <pubDate>Mon, 23 Feb 2026 12:00:00 EST</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,74 @@
+{
+  "menuItem": [
+    {
+      "lab": "Lab 1",
+      "subtitle": "Setup / Intro",
+      "description": "Overall set up and connecting of Github, Azure and System. Click the reference for the 4 pdf of the instructions of installation and connecting of the systems. Check the results for the pdf for the proof of connecting the systems.",
+      "results": "../Labs/Lab1/lab1-result.pdf",
+      "refs": "../Labs/Lab1/lab1-referance"
+    },
+    {
+      "lab": "Lab 2",
+      "subtitle": "Resume",
+      "description": "Creating a Resume using HTML and CSS. Click the results to see my resume and the reference to see a resume template provided.",
+      "results": "../Labs/Lab2/anands3-ShruthiAnandraman-resume.html",
+      "refs": "../Labs/Lab2/Lab02-SampleResumeGrid2025.html"
+    },
+    {
+      "lab": "Lab 3",
+      "subtitle": "Personal Website",
+      "description": "Creating a Information Architecture diagram for this website. Click the Results to see the diagram, the reference for the instructions and the back icon to explore the website.",
+      "results": "../Labs/Lab3/itws1100Lab3-IA-anands3.png",
+      "refs": "../Labs/Lab3/ITWS1100-lab03-WebsiteInstructions-2025v2.html"
+    },
+    {
+      "lab": "Lab 3b",
+      "subtitle": "Personal Website Enhancement",
+      "description": "Creating an AI enhanced website design of this website.",
+      "results": "../Labs/Lab3b/index.html",
+      "refs": "../Labs/Lab3b/instructions.txt"
+    },
+    {
+      "lab": "Lab 4",
+      "subtitle": "RSS and Atom Feeds",
+      "description": "Created a valid RSS and Atom feed using XML to publish updates from my Intro to ITWS labs.",
+      "results": "../Labs/Lab4/index.html",
+      "refs": "../Labs/Lab4/IntroITWS-Lab4-RSS-2025-Instructions.html"
+    },
+    {
+      "lab": "Lab 5",
+      "subtitle": "JavaScript Form Validation",
+      "description": "Added JavaScript validation to an HTML form to prevent blank submissions and added interactive features like a comment field placeholder and nickname button. Also fixed form label attributes and focus styling in the CSS.",
+      "results": "../Labs/Lab5/lab5.html",
+      "refs": "../Labs/Lab5/lab5Instructions.html"
+    },
+    {
+      "lab": "Lab 6",
+      "subtitle": "jQuery Introduction",
+      "description": "We were introduced to jQuery. We practiced handling click events, showing/hiding content, toggling styles, and adding elements to the page without ever reloading the browser.",
+      "results": "../Labs/Lab6/lab6.html",
+      "refs": "../Labs/Lab6/instruction.txt"
+    },
+    {
+      "lab": "Lab 8",
+      "subtitle": "JavaScript, JSON and AJAX",
+      "description": "Built a dynamic lab list page using jQuery and AJAX. Lab entries are stored in a JSON file and loaded dynamically on page load",
+      "results": "labs.html",
+      "refs": "../Labs/Lab8/lab8instructions.html"
+    },
+{
+      "lab": "Lab 9",
+      "subtitle": "SQL & PHP Database",
+      "description": "Connected a MySQL database to PHP to build a dynamic movie database app. Created tables, inserted actors from a CSV, wrote relational queries, and displayed movies and actor relationships across multiple PHP-rendered tabs.",
+      "results": "../Labs/Lab9/movies.php",
+      "refs": "../Labs/Lab9/Lab9Instructions.html"
+    },
+    {
+      "lab": "Lab 10",
+      "subtitle": "Production Deployment, SSL & Auto-Deploy",
+      "description": "Deployed the website to a live Azure VM, secured sensitive labs with .htaccess password protection, enabled HTTPS via a free Let's Encrypt certificate, and set up automatic deployment from GitHub using a webhook handler with HMAC signature verification.",
+      "results": "../../index.php",
+      "refs": "../Labs/Lab10/index.html"
+    }
+  ]
+}

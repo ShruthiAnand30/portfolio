@@ -1,0 +1,75 @@
+rss {
+  display: block;
+  background: var(--bg);
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+}
+
+/* Channel container */
+channel {
+  display: block;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.06);
+}
+
+/* Feed title */
+title:first-of-type {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+/* Feed description */
+channel > description {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Each item */
+item {
+  display: block;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+}
+/* Links */
+item> link {
+  display: block;
+  color: var(--blue);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* Item title */
+item > title {
+  display: block;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+
+/* Item description */
+item > description {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Publication date */
+pubDate {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
