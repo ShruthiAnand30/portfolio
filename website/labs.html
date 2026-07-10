@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Labs | Shruthi Anandraman</title>
+  <title>School Projects | Shruthi Anandraman</title>
   <link rel="stylesheet" href="style.css"/>
 
   <!-- jQueryUI theme (CDN) — provides tooltip styling -->
@@ -80,9 +80,9 @@
 
           <nav aria-label="Main navigation">
             <a class="nav-btn" href="../index.html">Home</a>
-            <a class="nav-btn" href="about.html">About Me</a>
-            <a class="nav-btn active" href="labs.html">Labs</a>
-            <a class="nav-btn" href="reference.html">References</a>
+            <a class="nav-btn" href="projects.html">Personal Projects</a>
+            <a class="nav-btn active" href="labs.html">School Projects</a>
+            <a class="nav-btn" href="about.html">About</a>
           </nav>
         </div>
       </div>
@@ -91,28 +91,78 @@
     <main class="container">
       
       <div class="intro-section">
-        <h2>Lab Portfolio</h2>
+        <h2>School Projects</h2>
         <p>
-          A comprehensive collection of my ITWS1100 lab assignments, showcasing progressive 
-          skill development in web technologies, information architecture, and design thinking. 
-          Each lab represents a step in my journey from foundational concepts to complex 
-          web development projects.
+          This is a record of my ITWS1100 (Intro to IT &amp; Web Science) lab assignments —
+          not the main event, but the foundation everything else here was built on. If you're
+          looking for my independent work, head over to <a href="projects.html">Personal Projects</a>.
         </p>
         
         <div style="margin-top: 20px;">
-          <span class="stat-card navy">3 Completed Labs</span>
-          <span class="stat-card gold">Full-Stack Skills</span>
+          <span class="stat-card navy">10 Labs</span>
+          <span class="stat-card gold">Full-Stack Fundamentals</span>
           <span class="stat-card ruby">Azure Deployed</span>
         </div>
       </div>
 
       <section class="section">
-        <h2 class="section-title">Lab Projects</h2>
+        <h2 class="section-title">Highlights</h2>
+        <p>
+          A couple of assignments I'm especially proud of, out of the full archive below.
+        </p>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 2 – Resume Website</span>
+            <span>HTML / CSS</span>
+          </div>
+          <div class="entry-sub">
+            This lab stood out to me because it actually motivated me to rebuild my resume and
+            provided a way to create one based on my own style that was also compatible with
+            online job applications. It also inspired me to build most of the sections for this
+            website — clean layout design, professional formatting, and effective use of CSS
+            Grid for structure.
+          </div>
+          <a class="button" href="../Labs/Lab2/anands3-ShruthiAnandraman-resume.html">
+            View Lab 2
+          </a>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span>Lab 3 – Personal Website IA</span>
+            <span>Information Architecture</span>
+          </div>
+          <div class="entry-sub">
+            Creating the information architecture diagram for this website helped me understand
+            user flow and content organization — foundational work that ensured clear navigation
+            and a logical content hierarchy throughout the site.
+          </div>
+          <div class="project-preview">
+            <img src="../Labs/Lab3/itws1100Lab3-IA-anands3.png" alt="Website Information Architecture Diagram" />
+            <div class="preview-label">Information Architecture Diagram</div>
+          </div>
+          <a class="button" href="../Labs/Lab3/itws1100Lab3-IA-anands3.png" target="_blank">
+            View IA Diagram
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Full Archive</h2>
 
         <!-- Lab entries are built here dynamically by lab8.js -->
         <p id="lab-loading">Loading labs…</p>
         <div id="lab-list"></div>
 
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Feeds</h2>
+        <div class="button-group">
+          <a class="button" href="../Labs/Lab4/rss.xml">RSS Feed</a>
+          <a class="button secondary" href="../Labs/Lab4/atom.xml">Atom Feed</a>
+        </div>
       </section>
     </main>
 
